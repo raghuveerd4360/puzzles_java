@@ -1,6 +1,7 @@
 package dr.puzzles;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class PossiblePairSum {
@@ -29,6 +30,29 @@ public class PossiblePairSum {
                     int[] result = {input[i], input[j]};
                     output.add(result);
                 }
+            }
+        }
+        return output;
+    }
+
+    public List<int[]> sortingAndClosingWithNoDuplicates(int[] input, int sum) {
+        List<int[]> output = new ArrayList<>();
+        Arrays.sort(input);
+        int end = input.length - 1;
+        int start = 0;
+
+        while (start < end) {
+            if (input[start] + input[end] == sum) {
+                int[] res = {input[start], input[end]};
+                output.add(res);
+                start++;
+                continue;
+            }
+
+            if (input[start] < input[end]) {
+                end--;
+            } else {
+                start++;
             }
         }
         return output;
