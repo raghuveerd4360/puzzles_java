@@ -56,4 +56,24 @@ public class PossiblePairSumTest {
         List<int[]> output4 = possiblePairSum.sortingAndClosingWithNoDuplicates(input3, 5);
         Assertions.assertEquals(2, output4.size());
     }
+
+
+    @Test
+    public void testFindPairsUsingSet() {
+        PossiblePairSum possiblePairSum = new PossiblePairSum();
+        int[] input = {5, 3, 4, 1, 2};
+        List<int[]> output = possiblePairSum.findPairsUsingSet(input, 6);
+        Assertions.assertEquals(2, output.size());
+
+        List<int[]> output2 = possiblePairSum.findPairsUsingSet(input, 5);
+        Assertions.assertEquals(2, output2.size());
+
+        int[] input2 = {1, 2, 3, 4, 5};
+        List<int[]> output3 = possiblePairSum.findPairsUsingSet(input2, 5);
+        Assertions.assertEquals(2, output3.size());
+
+        int[] input3 = {5, 4, 3, 2, 1};
+        List<int[]> output4 = possiblePairSum.findPairsUsingSet(input3, 5);
+        Assertions.assertEquals(2, output4.size());
+    }
 }

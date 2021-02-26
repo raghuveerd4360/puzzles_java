@@ -9,16 +9,15 @@ package dr.puzzles;
  */
 public class FizzBuzz {
 
-    public static final String FIZZ = " Fizz ";
-    public static final String BUZZ = " Buzz ";
-    public static final String FIZZBUZZ = " FizzBuzz ";
+    public static final String FIZZ = "Fizz";
+    public static final String BUZZ = "Buzz";
+    public static final String FIZZBUZZ = "FizzBuzz";
 
 
     public String getFizzBuzz(int max) {
         StringBuilder output = new StringBuilder();
 
-        if (max < 3) {
-            System.out.println(output.toString());
+        if (max <= 3) {
             return output.toString();
         }
 
@@ -37,8 +36,6 @@ public class FizzBuzz {
                 output.append(BUZZ);
             }
         }
-
-        System.out.println(output.toString());
 
         return output.toString();
     }

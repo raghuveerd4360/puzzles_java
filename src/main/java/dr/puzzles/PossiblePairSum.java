@@ -1,8 +1,6 @@
 package dr.puzzles;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class PossiblePairSum {
 
@@ -57,4 +55,24 @@ public class PossiblePairSum {
         }
         return output;
     }
+
+
+    public List<int[]> findPairsUsingSet(int[] input, int sum) {
+        List<int[]> output = new ArrayList<>();
+        Set<Integer> temp = new HashSet<>();
+
+        for (int cur : input) {
+            int neededInt = sum-cur;
+            if(temp.contains(neededInt)) {
+                int[] res = {cur, neededInt};
+                output.add(res);
+            } else {
+                temp.add(cur);
+            }
+        }
+
+        return output;
+    }
+
+
 }
