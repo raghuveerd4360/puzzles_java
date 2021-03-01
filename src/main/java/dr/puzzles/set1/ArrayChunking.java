@@ -1,4 +1,4 @@
-package dr.udemy;
+package dr.puzzles.set1;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package dr.udemy;
+package dr.puzzles.set1;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

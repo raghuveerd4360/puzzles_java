@@ -1,4 +1,4 @@
-package dr.udemy;
+package dr.puzzles.set1;
 
 public class ReverseInteger {
     public int simpleReverse(int input) {

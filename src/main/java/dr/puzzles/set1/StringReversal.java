@@ -1,6 +1,4 @@
-package dr.udemy;
-
-import java.util.Arrays;
+package dr.puzzles.set1;
 
 public class StringReversal {
 
