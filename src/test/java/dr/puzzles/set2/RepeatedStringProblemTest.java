@@ -23,4 +23,14 @@ public class RepeatedStringProblemTest {
         Assertions.assertEquals(1, out1);
 
     }
+
+    @Test
+    public void getNumATest3() {
+        RepeatedStringProblem repeatedStringProblem = new RepeatedStringProblem();
+        String s1 = "dbc";
+
+        long out1 = repeatedStringProblem.getNumA(s1, 8);
+        Assertions.assertEquals(0, out1);
+
+    }
 }

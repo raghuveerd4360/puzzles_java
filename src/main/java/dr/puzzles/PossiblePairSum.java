@@ -44,6 +44,7 @@ public class PossiblePairSum {
                 int[] res = {input[start], input[end]};
                 output.add(res);
                 start++;
+                end--;
                 continue;
             }
 

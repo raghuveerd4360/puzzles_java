@@ -4,16 +4,17 @@ public class FindSecondLargestNumber {
 
     public int findSecondLargestNumber(int[] input) {
 
-        int largest = 0;
-        int secondLargest = 0;
-        for (int i = 0; i < input.length; i++) {
-            if (input[i] > largest) {
+        int largest = Integer.MIN_VALUE;
+        int secondLargest = Integer.MIN_VALUE;
+
+        for (int j : input) {
+            if (j > largest) {
                 secondLargest = largest;
-                largest = input[i];
+                largest = j;
+            } else if (j > secondLargest) {
+                secondLargest = j;
             }
         }
-
         return secondLargest;
-
     }
 }

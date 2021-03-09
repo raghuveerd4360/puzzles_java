@@ -15,5 +15,14 @@ public class FindSecondLargestNumberTest {
         int[] input2 = {4, 2, 9, 1};
         int output2 = findSecondLargestNumber.findSecondLargestNumber(input2);
         Assertions.assertEquals(4, output2);
+
+
+        int[] input3 = {1, 23, 5, 6, 6};
+        int output3 = findSecondLargestNumber.findSecondLargestNumber(input3);
+        Assertions.assertEquals(6, output3);
+
+        int[] input4 = {-1, -23, -5, -6, -6};
+        int output4 = findSecondLargestNumber.findSecondLargestNumber(input4);
+        Assertions.assertEquals(-5, output4);
     }
 }
