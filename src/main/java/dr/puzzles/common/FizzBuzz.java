@@ -1,4 +1,4 @@
-package dr.puzzles;
+package dr.puzzles.common;
 
 /**
  * Accepts an integer  and prints Fizz, Buzz or FizBuzz of numbers

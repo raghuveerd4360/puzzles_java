@@ -1,4 +1,4 @@
-package dr.puzzles;
+package dr.puzzles.common;
 
 import java.util.*;
 

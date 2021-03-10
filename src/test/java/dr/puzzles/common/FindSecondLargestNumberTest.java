@@ -1,5 +1,6 @@
-package dr.puzzles;
+package dr.puzzles.common;
 
+import dr.puzzles.common.FindSecondLargestNumber;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

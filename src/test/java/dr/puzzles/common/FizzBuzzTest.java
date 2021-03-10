@@ -1,10 +1,11 @@
-package dr.puzzles;
+package dr.puzzles.common;
 
+import dr.puzzles.common.FizzBuzz;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static dr.puzzles.FizzBuzz.BUZZ;
-import static dr.puzzles.FizzBuzz.FIZZ;
+import static dr.puzzles.common.FizzBuzz.BUZZ;
+import static dr.puzzles.common.FizzBuzz.FIZZ;
 
 public class FizzBuzzTest {
 

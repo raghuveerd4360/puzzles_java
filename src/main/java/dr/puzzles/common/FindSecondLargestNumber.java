@@ -1,4 +1,4 @@
-package dr.puzzles;
+package dr.puzzles.common;
 
 public class FindSecondLargestNumber {
 
